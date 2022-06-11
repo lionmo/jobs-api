@@ -13,7 +13,7 @@ const app = express();
 // ConnectDB
 const connectDB = require('./db/connect')
 
-app.get('/', () => {
+app.get('/', (req, res) => {
   res.send("app deployed")
 })
 // Routers
